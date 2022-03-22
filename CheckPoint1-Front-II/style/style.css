@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url('../font/montserrat/Montserrat-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'amatic';
+    src: url('../font/amatic/AmaticSC-Regular.ttf');
+}
+
+* {
+    font-family: 'montserrat', 'Poppins';
+}
+
+body {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #caf0f8;
+    line-height: 1;
+}
+
+form {
+    background-image: linear-gradient(#133682,#447ab3,#2e65a5, #1e73be);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 30px;
+}
+
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.container-inputs {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+input, textarea {
+    padding: 15px 15px ;
+    width: 20vw;
+    border: none;
+    border-bottom: solid 5px rgb(218, 218, 218);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+label {
+    color: white;
+    font-size: 2rem;
+}
+
+fieldset button {
+    width: 20rem;
+    padding: 10px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.25s;
+    background-color: white;
+    font-size: 1.5rem;
+}
+
+#envia:hover, 
+#envia:focus {
+    box-shadow: 0 0.5em 0.5em -0.4em white;
+    transform: translateY(-0.25em);
+}
+
+.container {
+    background-color: #caf0f8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin: 20px 10%;
+    justify-content: center;
+}
+
+.block {
+    display: block;
+}
+
+.item {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px ;
+    padding: 5px; 
+}
+
+.item img {
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px ;
+    height: 100%;
+    padding: 15px 20px 1px 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.card-content {
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card-content button {
+    cursor: pointer;
+    padding: 1rem 5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #034211;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.25s;
+    line-height: 25px;
+    word-spacing: 2px;
+}
+
+aside {
+    position: fixed;
+    width: 55px;
+    height: 105px;
+    right: 1vw;
+    bottom: 20vh;
+  }
+  
+  aside a img {
+    width: 75%;
+  }
+  
+  aside a:nth-child(2) {
+    padding-bottom: 50px;
+    
+  }
+  
+
+@media (min-width: 601px) and (max-width: 800px){
+
+    h1 {
+        color: white;
+        margin-bottom: 3px;
+        font-size: 3rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        align-items: center;
+    }
+
+    .container-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset button {
+        width: 15rem;
+        padding: 6px;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.20s;
+        background-color: white;
+        font-size: .7rem;
+    }
+
+    #envia:hover, 
+    #envia:focus {
+    box-shadow: 0  white;
+    transform: translateY(-0.25em);
+
+    }
+
+
+    input, textarea {
+        font-size: 15px;
+        padding: 8px 8px ;
+        width: 40vw;
+        border: none;
+        border-bottom: solid 5px rgb(218, 218, 218);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    label {
+        color: white;
+        font-size: 1rem;
+    }
+
+
+
+    .item {
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        /* padding: 1.5rem; */
+        border-radius: 12px ;
+    }
+    
+    .card-content {
+        padding: .2rem;
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    .btn-item{
+        background-color: #034211;
+        color: white;
+        font-weight: lighter;
+        transition: 0.25s;
+        line-height: 10px;
+    }
+}
+
+footer{
+    margin-top: 150px;
+    font-size: 20px;
+    color: #133682;
+    text-align: center;
+}
+
+span{
+    color: black;
+}
+
+
+@media (min-width: 400px) and  (max-width: 600px){
+
+    h1 {
+        color: white;
+        margin-bottom: 3px;
+        font-size: 3rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        align-items: center;
+    }
+
+    .container-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset button {
+        width: 15rem;
+        padding: 6px;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.20s;
+        background-color: white;
+        font-size: .7rem;
+    }
+
+    #envia:hover, 
+    #envia:focus {
+    box-shadow: 0  white;
+    transform: translateY(-0.25em);
+
+    }
+
+
+    input, textarea {
+        font-size: 15px;
+        padding: 8px 8px ;
+        width: 40vw;
+        border: none;
+        border-bottom: solid 5px rgb(218, 218, 218);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    label {
+        color: white;
+        font-size: 1rem;
+    }
+
+
+
+    .item {
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        /* padding: 1.5rem; */
+        border-radius: 12px ;
+    }
+    
+    .card-content {
+        padding: .2rem;
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    .btn-item{
+        background-color: #034211;
+        color: white;
+        font-weight: lighter;
+        transition: 0.25s;
+        line-height: 10px;
+    }
+    footer{
+        margin-top: 150px;
+        font-size: 18px;
+        color: #133682;
+        text-align: center;
+    }
+    
+    span{
+        color: black;
+    }
+}
+
+@media (max-width: 399px){
+    
+    h1 {
+        color: white;
+        margin-bottom: 3px;
+        font-size: 3rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        align-items: center;
+    }
+
+    .container-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset button {
+        width: 15rem;
+        padding: 6px;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.20s;
+        background-color: white;
+        font-size: .7rem;
+    }
+
+    #envia:hover, 
+    #envia:focus {
+    box-shadow: 0  white;
+    transform: translateY(-0.25em);
+
+    }
+
+    input, textarea {
+        font-size: 15px;
+        padding: 8px 8px ;
+        width: 40vw;
+        border: none;
+        border-bottom: solid 5px rgb(218, 218, 218);
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    label {
+        color: white;
+        font-size: 1rem;
+    }
+
+
+
+    .item {
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        /* padding: 1.5rem; */
+        border-radius: 12px ;
+    }
+    
+    .card-content {
+        padding: .2rem;
+        text-align: center;
+        font-size: .8rem;
+        word-spacing: 2px;
+    }
+
+    .btn-item{
+        background-color: #034211;
+        color: white;
+        font-weight: lighter;
+        transition: 0.25s;
+        line-height: 10px;
+    }
+
+    footer{
+        margin-top: 150px;
+        font-size: 15px;
+        color: #133682;
+        text-align: center;
+    }
+    
+    span{
+        color: black;
+    }
+}
+
